@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(151, 205, 226);
+    text-align: center;
+    line-height-step: 2.2;
+}
+
+.hero{
+    padding:20px 10px;
+}
+
+.hero img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.section h2{
+    font-size: 22px
+}
+
+.hero h2{
+    font-size: 37px;
+}
+
+.accent{
+    color:rgb(137, 137, 198)136, 136, 206);
+}
+
+.grid{
+    display : flex;    
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.grid div{
+    padding: 15px;
+    border-radius: 40px;
+    background-color: royalblue;  
+    width: 90px;                                                                                  
+}
+
+@media(max-width: 768px) {
+    body{background-color: rgb(111, 143, 196):;}
+}
