@@ -1,3 +1,74 @@
+const review = [ 
+    {
+        id: 1,
+        name: 'john doe',
+        img:'#',
+        text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+    },
+]
+[
+    { 
+           {
+        id: 2,
+        name: 'jane doe',
+        img:'#',
+        text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+    },
+]
+
+    {
+           {
+        id: 3,
+        name: 'jack doe',
+        img:'#',
+        text:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+    },
+];
+
+
+const img = document.getElementById('person-img');
+const author = document.getElementById('author');
+const job= document.getElementById('job');
+const info = document.getElementById('info');
+
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+let currentItem = 0;
+window.addEventListener('DOMContentLoaded', function() {
+     const item = review[currentItem];
+     img.src = item.img;
+     author.textContent = item.name;
+    job.textContent = item.name;
+    info.textContent = item.text;
+});
+
+function showPerson(person){
+    const item = review[person];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.name;
+    info.textContent = item.text;
+}
+
+nextBtn.addEventListener('click', function(){
+    currentItem++;
+    if(currentItem > reviews.length - 1){
+        currentItem = 0;
+    }
+    showPerson(currentItem);
+});
+
+prevBtn.addEventListener('click', function(){
+    currentItem--;
+    if(currentItem < 0){
+        currentItem = reviews.length -1;
+    }
+    showPerson(currentItem);
+});
+
+
+
 console.log("Hello world");
 
 let chicken = "123";
